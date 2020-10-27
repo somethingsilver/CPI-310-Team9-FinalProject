@@ -1,0 +1,116 @@
+body{
+    background-color: #2a2d34;
+}
+
+ body h1{
+    color: #FFBA49;
+    font-family: 'Oswald'; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: center;
+}
+
+ body h2{
+    color:#EF5B5B;
+    font-family: 'Oswald'; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    border: 2px solid #c1bddb;
+    margin: 20px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    
+}
+
+body h3{
+    color:#20A39E;
+    font-family: 'Oswald'; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    border: 2px solid green;
+    width: 10%;
+    text-align: center;
+    height: 10%;
+    padding-bottom: 15px;
+}
+
+body p{
+    color: #d6d6d6;
+    font-family: 'Cardo'; font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: yellow;
+  }
+
+.NextWaveLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Teamlogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color:#EF5B5B;
+    overflow: auto;
+}
+
+
+/* Project Plan Image Css */ 
+.planProject{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color:#EF5B5B;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Oswald';
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color:#20A39E;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #774caf;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel= "stylesheet" href= "style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    </head>
+<body>
+
+<h1>NEXTWAVE COLLECTION</h1>
+<div class="navbar">
+    <a class="active" href="WelcomePage.html"><i class="fa fa-fw fa-home"></i> Welcome Page</a>
+    <a href="AboutPage.html"><i class="fa fa-fw fa-search"></i> About Page</a>
+    <a href="SpecificationPage.html"><i class="fa fa-fw fa-search"></i> Specifications</a>
+    <a href="ProjectPlan.html"><i class="fa fa-fw fa-envelope"></i> Project Plan</a>
+    <a href="TeamPage.html"><i class="fa fa-fw fa-user"></i> Our Team Page</a>
+  </div>
+
+    <p>As lovers of indie content, it can be challenging to find all the different resources available to promote movies, tv shows, music and games. Not to mention many of the platforms are single topic based so we would have to keep track of each site for each category, so my team and I wanted to create a universal platform that consolidates all categories of indie content together where consumers can filter through any type of media they please without having to run back and forth between all different types of places.<br>
+
+	<br>
+	<br>
+    
+    </p>
+    <h2>Purpose of project</h2>
+    <p>
+        By creating our database, users are easily able to find new content suggestions each week and are asked to review them if consumed.
+        This helps both people find exactly what they didn't know they were looking for as well as giving the creator's real time feedback on their work.
+    </p>
+
+    <br>
+
+    <h2>List of deliverables</h2>
+    <p>
+    	Creative Brief:<br>
+    	1. Project Scope<br>
+    	NextWave Collections is an indie content repository where users can come and seek out new content to consume that may be lesser known to the public as well as review the same content.<br><br>
+    	2. Target Audience<br>
+    	Anyone is welcome to use the platform, however we are mainly targeting those who seek out content that may not be as main stream to the public.<br><br>
+    	3. Overall Message<br>
+    	We want to help the world understand that great media can come in all shapes and forms, and just because content is not number one at the box office or top of the trending charts does not mean it is low quality. We generally want to help generate awareness to the diamonds in the rough.<br>
+    	
+    	<br>
+
+
+    	<br>
+
+    	Mockup:<br>
+    	With our CSS, we will be writing in a combination of a vibrant yellow, red, green and lavender while contrasting those with cooler blues and blacks. We hope that with this pallete blended together with Oswald and Cardo fonts will bring a welcoming and modern approach to a content suggestion website while being open to consumers of all ages.<br>
+
+    	<br>
+
+    	All colors will be based off of this pallete:<br>
+		<div class="colorpallete">
+    	<img src="NWC_ColorPallete.png" class="image" alt="Color Pallete" width="800" height="500">
+	    </div>
+    	<br>
+
+		<p>
+		Final Prototype:<br>
+    	From the prototype, users can expect to have a fully functional review and suggestion site where on the home page they are greeted by a general top suggestions list of content within the category they choose, and from there they can navigate straight to reviews or do a more filtered search for more specific content. 
+		</p>
+
+    <h2>Use Case Analysis</h2>
+    <div class="databaseRelationshipModel">
+    	<img src="DatabaseRelationshipModel.jpg" class="image" alt="Use Case Analysis" width="800" height="500">
+	</div>
+    <h2>Database Design</h2>
+    <p>
+	    Database layout for Indie Website:<br>
+
+		Table: dbo.tblUsers<br>
+		Fields and data types: UserID(int), FirstName(varchar), LastName(varchar), Email(nvarchar), Username(nvarchar), Password(nvarchar)<br>
+		
+		<br>
+
+		Table: dbo.tblMovies<br>
+		Fields and data types: MovieID(int), MovieName(nvarchar), CreatorID(int), Review(varchar), Rating(int)<br>
+
+		<br>
+
+		Table: dbo.tblBooks<br>
+		Fields and data types: BookID(int), BookName(nvarchar), CreatorID(int),<br>
+		Review(varchar), Rating(int)<br>
+
+		<br>
+
+		Table: dbo.tblSongs<br>
+		Fields and data types: SongID(int), SongName(nvarchar), CreatorID(int),<br>
+		Review(varchar), Rating(int)<br>
+
+		<br>
+
+		Table: dbo.tblTVShows<br>
+		Fields and data types: ShowID(int), ShowName(nvarchar), CreatorID(int),<br>
+		Review(varchar), Rating(int)<br>
+
+		<br>
+
+		Table: dbo.tblCreators<br>
+		Fields and data types: CreatorID(int), FirstName(varchar), LastName(varchar), TypeID(int)<br>
+
+		<br>
+
+		Table: dbo.tblMediaType<br>
+		Fields and data types: TypeID(int), Type(varchar), CreatorID(int)<br>
+
+		<br>
+		<br>
+
+		Explanation: The Users table will hold all of the standard user information when a user signs up for the site. Each type of media table will contain identifying fields, along with being connected to the Creators table to identify who created it. This will promote normalization. There will be a stand-alone Media Type table to hold the different types of media being uniquely identified with a TypeID field that the Creators table can call from.
+    </p>
+
+<footer>
+	<p>"Let's go for a ride"<br>
+	<a href="WelcomePage.html">NextWave Collections 2020</a></p>
+</footer>
+
+</body>
+</html>
